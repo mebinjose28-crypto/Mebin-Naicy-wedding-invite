@@ -8,7 +8,7 @@ export const wedding = {
   couple: {
     partnerOne: 'Naicy',
     partnerTwo: 'Mebin',
-    monogram: ['N', 'M'] as const,
+    monogram: ['M', 'N'] as const,
   },
 
   site: {
@@ -120,7 +120,7 @@ export const wedding = {
           label: 'Holy Matrimony',
           time: '11:00 AM',
           name: "St. Augustine's Forane Church",
-          address: 'Ramapuram',
+          address: 'Ramapuram, Pala',
           mapUrl: 'https://share.google/zLsvEGAA1jTkwTZY0',
         },
         {
