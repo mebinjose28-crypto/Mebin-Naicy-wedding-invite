@@ -217,8 +217,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(120% 70% at 50% 42%, rgb(60 0 14 / 0.05), rgb(40 0 10 / 0.55) 70%),
-      linear-gradient(to bottom, rgb(40 0 10 / 0.6), rgb(40 0 10 / 0.15) 38%, rgb(40 0 10 / 0.35) 62%, rgb(30 0 8 / 0.88));
+  radial-gradient(120% 70% at 50% 42%, rgb(30 70 45 / 0.05), rgb(15 40 25 / 0.55) 70%),
+  linear-gradient(to bottom, rgb(15 40 25 / 0.6), rgb(15 40 25 / 0.15) 38%, rgb(15 40 25 / 0.35) 62%, rgb(10 25 15 / 0.88));
   }
 
   .cover.is-opening .cover-panel--left {
