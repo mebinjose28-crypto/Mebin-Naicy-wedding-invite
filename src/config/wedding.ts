@@ -84,7 +84,7 @@ export const wedding = {
       tone: 'light' as const,
       venues: [
         {
-          label: 'Church Ceremony',
+          label: 'Betrothal Ceremony',
           time: '11:30 AM',
           name: 'St. George Church',
           address: 'Puthenpally, Varapuzha',
@@ -178,13 +178,14 @@ export const wedding = {
 export type WeddingEvent = (typeof wedding.events)[number]
 export type Venue = WeddingEvent['venues'][number]
 
-/** Resolves a photo path, optionally through Netlify Image CDN. */
-export function photo(src: string, width: number, quality = 72) {
-  if (!wedding.site.useNetlifyImageCdn) return src
-  return `/.netlify/images?url=${encodeURIComponent(src)}&w=${width}&fm=webp&q=${quality}`
+
+/** Resolves photo paths for GitHub Pages. */
+export function photo(src: string, _width: number, _quality = 72) {
+  return `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
 }
 
 export function photoSrcSet(src: string, widths: number[]) {
-  if (!wedding.site.useNetlifyImageCdn) return undefined
-  return widths.map((w) => `${photo(src, w)} ${w}w`).join(', ')
+  return widths
+    .map((w) => `${photo(src, w)} ${w}w`)
+    .join(', ')
 }
