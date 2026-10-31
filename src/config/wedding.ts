@@ -70,7 +70,6 @@ export const wedding = {
   events: [
     {
       id: 'engagement',
-      number: 'I',
       kicker: 'Event One',
       title: 'Engagement Celebration',
       host: "@ Naicy's",
@@ -100,12 +99,11 @@ export const wedding = {
       ],
       note: {
         title: 'Just next door',
-        text: 'The Parish Hall is adjacent to the church — simply walk across after the ceremony.',
+        text: 'The Parish Hall is next to the church — simply walk across after the ceremony.',
       },
     },
     {
       id: 'wedding',
-      number: 'II',
       kicker: 'Event Two',
       title: 'Wedding Celebration',
       host: "@ Mebin's",
@@ -150,7 +148,7 @@ export const wedding = {
       'Your presence would make our celebrations complete. Kindly let us know if you can attend — it only takes a moment.',
     button: 'RSVP Now',
     url: 'https://tally.so/r/J1q1LK',
-    footnote: 'Opens our RSVP form in a new tab. Your response is recorded the moment you submit it there.',
+  
   },
 
   music: {
