@@ -63,7 +63,9 @@ body {
   --sidebar-border: var(--border);
   --sidebar-ring: var(--gold);
 }
-
+font-monogram {
+  font-family: var(--font-monogram);
+}
 @theme inline {
   --color-burgundy: var(--burgundy);
   --color-burgundy-deep: var(--burgundy-deep);
