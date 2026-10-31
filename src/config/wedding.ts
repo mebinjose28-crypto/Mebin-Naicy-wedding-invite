@@ -13,7 +13,7 @@ export const wedding = {
 
   site: {
     /** Absolute URL of the live site. Used for WhatsApp / social previews. */
-    url: 'https://cinematic-wedding-94a204.netlify.app',
+    url: 'https://mebinjose28-crypto.github.io/Mebin-Naicy-wedding-invite/',
     title: 'Naicy & Mebin – Wedding Invitation',
     description:
       'With joy in our hearts, we invite you to celebrate with us on 26th & 28th December 2026 in Kerala.',
@@ -25,7 +25,7 @@ export const wedding = {
      * When true, photos are resized and converted to WebP by Netlify Image CDN.
      * Set to false when hosting elsewhere — the original files are used as-is.
      */
-    useNetlifyImageCdn: true,
+    useNetlifyImageCdn: false,
   },
 
   cover: {
