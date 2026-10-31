@@ -13,14 +13,14 @@ body {
 
 :root {
   /* Invitation palette */
-  --burgundy: #800020;
-  --burgundy-deep: #5c0017;
-  --gold: #d6b878;
-  --gold-soft: #e6d3a6;
-  --ivory: #f8f3e9;
-  --ivory-deep: #f1e8d8;
-  --blush: #d8b7b2;
-  --charcoal: #1C1C1C;
+    --burgundy: #526B55;       /* sage */
+  --burgundy-deep: #293D30;  /* deep forest */
+  --gold: #A7A77A;           /* muted olive */
+  --gold-soft: #D2D0A8;
+  --ivory: #F7F5EC;          /* warm cream */
+  --ivory-deep: #EAE8D9;
+  --blush: #C7D0BD;           /* soft sage */
+  --charcoal: #263128;
 
   --font-body: 'Jost', 'Helvetica Neue', Arial, system-ui, sans-serif;
   --font-heading: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
