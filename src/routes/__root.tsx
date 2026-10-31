@@ -38,7 +38,7 @@ export const Route = createRootRoute({
       { name: 'twitter:image', content: shareImage },
     ],
     links: [
-      { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+      {   rel: 'icon',   href: `${import.meta.env.BASE_URL}favicon.svg`,   type: 'image/svg+xml', },
       { rel: 'canonical', href: site.url },
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
       {
