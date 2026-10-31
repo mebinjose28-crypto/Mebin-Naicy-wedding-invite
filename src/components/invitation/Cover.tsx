@@ -95,7 +95,7 @@ export function Cover({
           }}
         >
           <div style={{ '--i': 0 } as React.CSSProperties}>
-            <Monogram letters={couple.monogram} className="size-12 text-lg text-ivory" />
+            <Monogram letters={couple.monogram} className="size-36 text-lg text-ivory" />
           </div>
 
           <div className="flex flex-col items-center">
