@@ -110,7 +110,7 @@ export function Cover({
             </p>
             <p
               id="cover-names"
-              className="font-display mt-5 leading-[0.92] font-medium"
+              className="font-display mt-5 leading-[0.92] font-medium tracking-[0.02em]"
               style={{ '--i': 3 } as React.CSSProperties}
             >
               <span className="shimmer-text block text-[clamp(3.6rem,19vw,7.5rem)]">
@@ -135,13 +135,13 @@ export function Cover({
               ref={buttonRef}
               type="button"
               onClick={open}
-              className="open-button eyebrow min-h-14 rounded-full border border-gold/80 bg-burgundy/85 px-10 text-[0.78rem] text-ivory shadow-[0_10px_40px_-10px_rgb(128_0_32/0.9)] transition-colors hover:bg-burgundy focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold"
+              className="open-button eyebrow min-h-14 rounded-full border border-gold/90 bg-white/8 px-10 text-[0.78rem] text-ivory shadow-[0_10px_40px_-12px_rgba(214,184,120,0.45)] transition-colors duration-300 hover:border-gold hover:bg-white/12 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/70"
             >
               <span className="ring" aria-hidden="true" />
               {cover.button}
             </button>
             {music.available && (
-              <p className="flex items-center gap-1.5 text-[0.7rem] tracking-wide text-ivory/65">
+              <p className="flex items-center gap-1.5 text-[0.7rem] tracking-[0.12em] text-ivory/65 uppercase">
                 <Music2 className="size-3" aria-hidden="true" />
                 Best enjoyed with sound on
               </p>

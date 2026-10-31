@@ -12,11 +12,17 @@ export function Hero() {
       className="paper relative flex min-h-[100svh] flex-col items-center overflow-hidden px-6 pt-24 pb-10 text-center"
     >
       <div className="hero-enter flex w-full max-w-md flex-1 flex-col items-center">
-        <p className="eyebrow max-w-[18rem] leading-relaxed text-burgundy/80" style={delay(0)}>
+        <p
+          className="eyebrow max-w-[18rem] leading-relaxed tracking-[0.18em] text-burgundy/80"
+          style={delay(0)}
+        >
           {hero.blessing}
         </p>
 
-        <div className="hero-photo relative mt-9 w-[min(68vw,17rem)]" style={delay(1)}>
+        <div
+          className="hero-photo relative mt-9 w-[min(68vw,17rem)] drop-shadow-[0_20px_40px_rgba(92,0,23,0.12)]"
+          style={delay(1)}
+        >
           <div className="arch-frame" />
           <div className="arch aspect-[3/4] overflow-hidden bg-blush/40">
             <img
@@ -42,7 +48,7 @@ export function Hero() {
         </h1>
 
         <p
-          className="font-display mt-4 max-w-[19rem] text-xl leading-snug italic text-charcoal/80"
+          className="font-display mt-4 max-w-[19rem] text-[clamp(1.1rem,3vw,1.5rem)] leading-snug italic tracking-[0.02em] text-charcoal/80"
           style={delay(3)}
         >
           {hero.invitation}

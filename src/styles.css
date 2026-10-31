@@ -15,6 +15,7 @@ body {
   /* Invitation palette */
   --burgundy: #800020;
   --burgundy-deep: #5c0017;
+  --burgundy-soft: #8d2d45;
   --gold: #d6b878;
   --gold-soft: #e6d3a6;
   --ivory: #f8f3e9;
@@ -166,7 +167,7 @@ body {
 
   /* Paper grain on ivory surfaces — a single tiny inline SVG, no image request */
   .paper {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.35 0 0 0 0 0.2 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOc[...]
   }
 
   /* ---------- Cover ---------- */
@@ -187,6 +188,7 @@ body {
     background: var(--burgundy-deep);
     transition: transform 1.35s var(--ease-cinematic);
     will-change: transform;
+    filter: saturate(0.9) contrast(1.1) brightness(0.72);
   }
 
   .cover-panel--left {
@@ -218,8 +220,8 @@ body {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(120% 70% at 50% 42%, rgb(60 0 14 / 0.05), rgb(40 0 10 / 0.55) 70%),
-      linear-gradient(to bottom, rgb(40 0 10 / 0.6), rgb(40 0 10 / 0.15) 38%, rgb(40 0 10 / 0.35) 62%, rgb(30 0 8 / 0.88));
+      radial-gradient(120% 70% at 50% 42%, rgb(60 0 14 / 0.06), rgb(40 0 10 / 0.4) 70%),
+      linear-gradient(to bottom, rgb(40 0 10 / 0.42), rgb(40 0 10 / 0.1) 36%, rgb(40 0 10 / 0.2) 62%, rgb(30 0 8 / 0.7));
   }
 
   .cover.is-opening .cover-panel--left {
@@ -239,7 +241,7 @@ body {
     width: 2px;
     transform: translateX(-50%) scaleY(0);
     background: linear-gradient(to bottom, transparent, var(--gold-soft) 30%, #fff8e6 50%, var(--gold-soft) 70%, transparent);
-    box-shadow: 0 0 24px 6px rgb(214 184 120 / 0.55);
+    box-shadow: 0 0 24px 6px rgb(214 184 120 / 0.45);
     opacity: 0;
     z-index: 3;
   }
@@ -251,6 +253,7 @@ body {
     position: absolute;
     inset: 0;
     z-index: 4;
+    background: radial-gradient(circle at center, rgb(130 32 53 / 0.08), transparent 42%);
     transition:
       opacity 0.55s ease,
       transform 0.7s var(--ease-cinematic),
@@ -286,7 +289,7 @@ body {
     width: 140vmin;
     height: 140vmin;
     transform: translate(-50%, -50%);
-    background: radial-gradient(circle, rgb(214 184 120 / 0.22), rgb(214 184 120 / 0.06) 35%, transparent 62%);
+    background: radial-gradient(circle, rgb(214 184 120 / 0.14), rgb(214 184 120 / 0.04) 35%, transparent 62%);
     animation: glow-pulse 6s ease-in-out infinite;
     pointer-events: none;
   }
@@ -307,13 +310,15 @@ body {
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    background: rgb(255 255 255 / 0.06);
+    box-shadow: 0 12px 32px -18px rgb(214 184 120 / 0.5);
   }
   .open-button::before {
     content: '';
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(110deg, transparent 30%, rgb(255 243 209 / 0.45) 50%, transparent 70%);
+    background: linear-gradient(110deg, transparent 30%, rgb(255 243 209 / 0.42) 50%, transparent 70%);
     transform: translateX(-120%);
     animation: sweep 3.6s ease-in-out 2.2s infinite;
   }
@@ -324,6 +329,15 @@ body {
     border: 1px solid rgb(214 184 120 / 0.55);
     animation: ring 2.8s ease-out 2s infinite;
     pointer-events: none;
+  }
+
+  .hero-photo .arch-frame {
+    position: absolute;
+    inset: -10px;
+    border: 1px solid rgb(128 0 32 / 0.18);
+    border-radius: 999px 999px 1.1rem 1.1rem;
+    pointer-events: none;
+    box-shadow: 0 18px 32px -20px rgb(92 0 23 / 0.3);
   }
 
   /* ---------- Hero ---------- */
@@ -338,14 +352,6 @@ body {
 
   .arch {
     border-radius: 999px 999px 0.75rem 0.75rem;
-  }
-
-  .arch-frame {
-    position: absolute;
-    inset: -10px;
-    border: 1px solid rgb(214 184 120 / 0.7);
-    border-radius: 999px 999px 1.1rem 1.1rem;
-    pointer-events: none;
   }
 
   .hero-photo img {
