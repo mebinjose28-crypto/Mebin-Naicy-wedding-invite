@@ -87,14 +87,14 @@ export const wedding = {
           time: '11:30 AM',
           name: 'St. George Church',
           address: 'Puthenpally, Varapuzha',
-          mapUrl: 'https://share.google/gvt2IGd1ggZITlh7e',
+          mapUrl: 'https://maps.app.goo.gl/WRDz4JbQ1cMdousx8',
         },
         {
           label: 'Reception',
           time: '12:30 PM',
           name: 'St. George Parish Hall',
           address: 'Puthenpally, Varapuzha',
-          mapUrl: 'https://share.google/2YyiH6AQ6ClJRPAFX',
+          mapUrl: 'https://maps.app.goo.gl/ZnVqL6tQapZLTQK56',
         },
       ],
       note: {
@@ -121,14 +121,14 @@ export const wedding = {
           time: '11:00 AM',
           name: "St. Augustine's Forane Church",
           address: 'Ramapuram, Pala',
-          mapUrl: 'https://share.google/zLsvEGAA1jTkwTZY0',
+          mapUrl: 'https://maps.app.goo.gl/HHkJ9DTtnU17NDvk',
         },
         {
           label: 'Reception',
           time: '12:30 PM',
           name: 'Michael Plaza Convention Center',
           address: 'Ramapuram, Pala',
-          mapUrl: 'https://share.google/o3pZU9rRDnDcoH2bi',
+          mapUrl: 'https://maps.app.goo.gl/tLGLLijbr77N5ggF7',
         },
       ],
       note: {
