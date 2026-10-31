@@ -20,7 +20,7 @@ export const wedding = {
     /** 1200×630 JPEG served as a plain static file so link previews load reliably. */
     shareImage: '/img/og-cover.jpg',
     shareImageAlt: 'The hands of a bride and groom resting together on an ivory silk saree',
-    themeColor: '#800020',
+    themeColor: '#FFFFF0',
     /**
      * When true, photos are resized and converted to WebP by Netlify Image CDN.
      * Set to false when hosting elsewhere — the original files are used as-is.
