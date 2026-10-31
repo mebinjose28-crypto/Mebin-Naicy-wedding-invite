@@ -104,7 +104,7 @@ export function EventSection({ event }: { event: WeddingEvent }) {
                   dark ? 'border-gold/40 text-gold-soft' : 'border-gold/60 bg-ivory text-burgundy',
                 )}
               >
-                {'travel' in note ? 'A short drive' : 'Adjacent to the church'}
+                {'travel' in note ? 'A short drive' : 'Next to the church'}
               </span>
               <span className="connector block h-7 w-px" />
             </div>
