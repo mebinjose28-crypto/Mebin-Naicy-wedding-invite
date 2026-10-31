@@ -51,7 +51,7 @@ export function MusicProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (!src) return
     const audio = new Audio()
-    audio.src = src
+    audio.src = `${import.meta.env.BASE_URL}${src.replace(/^\//, '')}`
     audio.loop = true
     audio.preload = 'none'
     audio.volume = volume
